@@ -1,5 +1,107 @@
-@use "./reset";
+@use "./reset" as *;
 @use "./colors" as *;
+
 body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: $very-dark-blue-main-bg;
+}
+
+.wrapper {
+	padding: 24px 25px 24px 24px;
+	width: 327px;
+	// height: 543px;
+	background-color: $very-dark-blue-card-bg;
+	border-radius: 15px;
+}
+
+.nft-picture {
+	border-radius: 8px;
+}
+
+.nft-name {
+	margin-top: 24px;
+	font-size: rem(22px);
+	font-weight: 600;
+	color: $white;
+}
+
+.description {
+	margin-top: 12px;
+	line-height: 26px;
+	font-size: rem(18px);
+	font-weight: 300;
+	color: $soft-blue;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	margin: 16px 0;
+}
+
+.eth-balance,
+.counter {
+	display: flex;
+}
+
+.eth-balance {
+	p {
+		padding-left: 6px;
+		font-size: rem(15px);
+		font-weight: 600;
+		color: $cyan;
+	}
+
+	img {
+		width: rem(11px);
+		height: rem(18px);
+	}
+}
+
+.counter {
+	p {
+		padding-left: 8px;
+		font-size: (15px);
+		font-weight: 400;
+		color: $soft-blue;
+	}
+
+	img {
+		margin-top: rem(2px);
+		width: rem(16px);
+		height: rem(16px);
+	}
+}
+
+.line {
+	border-top: 1px solid $very-dark-blue-line;
+}
+
+.signature {
+	display: flex;
+	align-items: center;
+	margin-top: 16px;
+}
+
+.avatar {
+	flex-shrink: 0;
+	width: rem(33px);
+	height: rem(33px);
+	border-radius: 50%;
+	border: 1px solid $white;
+}
+
+.created-by {
+	padding-left: 16px;
+	color: $white;
+	p {
+		font-size: rem(15px);
+		font-weight: 400;
+	}
+
+	p span {
+		color: $soft-blue;
+	}
 }
