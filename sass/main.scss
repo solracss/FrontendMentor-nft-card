@@ -143,4 +143,16 @@ body {
 			font-size: 1rem;
 		}
 	}
+
+	.author {
+		transition: color 0.3s;
+	}
+
+	.author,
+	.nft-name {
+		&:hover {
+			color: $cyan;
+			cursor: pointer;
+		}
+	}
 }

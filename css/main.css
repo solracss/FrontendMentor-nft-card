@@ -143,7 +143,7 @@ body {
     font-size: 0.9375rem;
     font-weight: 400;
 }
-.created-by p span {
+.created-by p span:first-of-type {
     color: #8bacd9;
 }
 
@@ -154,6 +154,7 @@ body {
     }
     .nft-name {
         margin-bottom: 16px;
+        transition: color 0.3s;
     }
     .description {
         margin-top: 16px;
@@ -170,5 +171,13 @@ body {
     }
     .created-by p {
         font-size: 1rem;
+    }
+    .author {
+        transition: color 0.3s;
+    }
+    .author:hover,
+    .nft-name:hover {
+        color: #00fff8;
+        cursor: pointer;
     }
 }/*# sourceMappingURL=main.css.map */
