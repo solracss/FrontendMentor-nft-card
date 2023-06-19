@@ -101,7 +101,7 @@ body {
 		font-weight: 400;
 	}
 
-	p span {
+	p span:first-of-type {
 		color: $soft-blue;
 	}
 }
@@ -114,6 +114,7 @@ body {
 
 	.nft-name {
 		margin-bottom: 16px;
+		transition: color 0.3s;
 	}
 
 	.description {
