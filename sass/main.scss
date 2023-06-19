@@ -105,3 +105,41 @@ body {
 		color: $soft-blue;
 	}
 }
+
+@media (min-width: 375px) {
+	.wrapper {
+		min-width: 350px;
+		padding: 24px 24px 32px;
+	}
+
+	.nft-name {
+		margin-bottom: 16px;
+	}
+
+	.description {
+		margin-top: 16px;
+		line-height: 26px;
+	}
+
+	.container {
+		margin: 24px 0;
+	}
+
+	.eth-balance {
+		p {
+			font-size: 1rem;
+		}
+	}
+
+	.counter {
+		p {
+			font-size: 1rem;
+		}
+	}
+
+	.created-by {
+		p {
+			font-size: 1rem;
+		}
+	}
+}
