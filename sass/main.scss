@@ -24,6 +24,8 @@ body {
 	font-size: rem(22px);
 	font-weight: 600;
 	color: $white;
+.overlay {
+	display: none;
 }
 
 .description {
