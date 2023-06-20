@@ -26,7 +26,7 @@ body {
 		font-weight: 600;
 		color: $white;
 		&:hover {
-			cursor: default;
+			cursor: text;
 		}
 	}
 }
@@ -103,14 +103,14 @@ body {
 
 .created-by {
 	padding-left: 16px;
-	color: $white;
+	color: $soft-blue;
 	p {
 		font-size: rem(15px);
 		font-weight: 400;
 	}
-
-	p span:first-of-type {
-		color: $soft-blue;
+	.author a {
+		color: $white;
+		cursor: text;
 	}
 }
 
@@ -157,7 +157,7 @@ body {
 		transition: color 0.3s;
 	}
 
-	.author,
+	.author a,
 	.nft-name a {
 		&:hover {
 			color: $cyan;

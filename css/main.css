@@ -77,7 +77,7 @@ body {
     color: #ffffff;
 }
 .nft-name a:hover {
-    cursor: default;
+    cursor: text;
 }
 
 .overlay {
@@ -146,14 +146,15 @@ body {
 
 .created-by {
     padding-left: 16px;
-    color: #ffffff;
+    color: #8bacd9;
 }
 .created-by p {
     font-size: 0.9375rem;
     font-weight: 400;
 }
-.created-by p span:first-of-type {
-    color: #8bacd9;
+.created-by .author a {
+    color: #ffffff;
+    cursor: text;
 }
 
 @media (min-width: 375px) {
@@ -185,7 +186,7 @@ body {
     .nft-name {
         transition: color 0.3s;
     }
-    .author:hover,
+    .author a:hover,
     .nft-name a:hover {
         color: #00fff8;
         cursor: pointer;
