@@ -71,8 +71,17 @@ body {
 .nft-name {
     margin-top: 24px;
     font-size: 1.375rem;
+}
+.nft-name a {
     font-weight: 600;
     color: #ffffff;
+}
+.nft-name a:hover {
+    cursor: default;
+}
+
+.overlay {
+    display: none;
 }
 
 .description {
@@ -152,7 +161,8 @@ body {
         min-width: 350px;
         padding: 24px 24px 32px;
     }
-    .nft-name {
+    .nft-name a {
+        color: #ffffff;
         margin-bottom: 16px;
     }
     .description {
@@ -176,7 +186,7 @@ body {
         transition: color 0.3s;
     }
     .author:hover,
-    .nft-name:hover {
+    .nft-name a:hover {
         color: #00fff8;
         cursor: pointer;
     }
@@ -188,6 +198,7 @@ body {
         opacity: 1;
     }
     .overlay {
+        display: block;
         position: absolute;
         top: 0;
         left: 0;
