@@ -149,18 +149,16 @@ body {
     cursor: text;
 }
 
-.img-container {
-    width: 302px;
-    height: 302px;
+.btn-overlay {
+    background: none;
+}
+
+.nft-picture {
     border-radius: 22px;
-    overflow: hidden;
 }
 
 .btn-overlay {
     position: relative;
-    background-color: yellow;
-    width: 100%;
-    height: 100%;
 }
 
 .btn-overlay::after {
