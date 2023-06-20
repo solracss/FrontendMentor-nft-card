@@ -61,6 +61,7 @@ body {
     padding: 24px 25px 24px 24px;
     width: 327px;
     background-color: #15263f;
+    background-color: antiquewhite;
     border-radius: 15px;
 }
 
@@ -154,7 +155,6 @@ body {
     }
     .nft-name {
         margin-bottom: 16px;
-        transition: color 0.3s;
     }
     .description {
         margin-top: 16px;
@@ -172,12 +172,37 @@ body {
     .created-by p {
         font-size: 1rem;
     }
-    .author {
+    .author,
+    .nft-name {
         transition: color 0.3s;
     }
     .author:hover,
     .nft-name:hover {
         color: #00fff8;
         cursor: pointer;
+    }
+    .img-container {
+        position: relative;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 255, 248, 0.5);
+        border-radius: 8px;
+        transition: opacity 0.3s;
+    }
+    .view-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .img-container:hover .overlay {
+        cursor: pointer;
+        opacity: 1;
     }
 }/*# sourceMappingURL=main.css.map */
