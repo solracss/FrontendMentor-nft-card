@@ -55,10 +55,13 @@ body {
 .counter {
 	display: flex;
 }
+.eth-balance,
+.counter {
+	gap: 1ch;
+}
 
 .eth-balance {
 	p {
-		padding-left: 6px;
 		font-size: rem(15px);
 		font-weight: 600;
 		color: $cyan;
@@ -72,7 +75,6 @@ body {
 
 .counter {
 	p {
-		padding-left: 8px;
 		font-size: (15px);
 		font-weight: 400;
 		color: $soft-blue;
@@ -93,6 +95,7 @@ body {
 	display: flex;
 	align-items: center;
 	margin-top: 16px;
+	gap: 1rem;
 }
 
 .avatar {
@@ -104,7 +107,6 @@ body {
 }
 
 .created-by {
-	padding-left: 16px;
 	color: $soft-blue;
 	p {
 		font-size: rem(15px);
