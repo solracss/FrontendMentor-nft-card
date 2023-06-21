@@ -152,30 +152,28 @@ button {
 	cursor: pointer;
 }
 
-.btn-overlay::after {
+.btn-overlay::after,
+.btn-overlay::before {
 	content: "";
 	position: absolute;
-	top: 0;
-	left: 0;
-	border-radius: 22px;
 	opacity: 0;
 	width: 100%;
 	height: 100%;
+	transition: opacity 0.3s ease-out;
+}
+
+.btn-overlay::after {
+	top: 0;
+	left: 0;
 	background-color: rgba($cyan, 0.5);
+	z-index: 1;
 }
 
 .btn-overlay::before {
-	content: "";
 	background-image: url("../images/icon-view.svg");
 	background-position: center;
 	background-repeat: no-repeat;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 100%;
-	height: 100%;
-	opacity: 0;
+	z-index: 2;
 }
 
 .btn-overlay:hover::after,
