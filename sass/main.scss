@@ -141,9 +141,15 @@ a:focus-visible {
 // }
 
 .btn-overlay {
+	display: block;
 	position: relative;
-	// width: 100%;
-	// height: 100%;
+	overflow: hidden;
+	border-radius: 8px;
+}
+
+button {
+	all: unset;
+	cursor: pointer;
 }
 
 .btn-overlay::after {
