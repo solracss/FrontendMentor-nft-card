@@ -87,6 +87,12 @@ body {
 	}
 }
 
+button:focus-visible,
+a:focus-visible {
+	outline: solid #fff 3px;
+	outline-offset: 0.25em;
+}
+
 .line {
 	border-top: 1px solid $very-dark-blue-line;
 }
