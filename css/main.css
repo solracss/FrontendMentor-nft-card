@@ -7,11 +7,6 @@
     font-family: "Outfit", sans-serif;
 }
 
-html,
-body {
-    height: 100%;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -54,12 +49,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
+    min-height: 100vh;
     background-color: #0d192b;
 }
 
 .wrapper {
     padding: 24px 25px 24px 24px;
-    width: 327px;
+    max-width: 20.4375rem;
     background-color: #15263f;
     border-radius: 15px;
 }
@@ -95,8 +92,12 @@ body {
     display: flex;
 }
 
+.eth-balance,
+.counter {
+    gap: 1ch;
+}
+
 .eth-balance p {
-    padding-left: 6px;
     font-size: 0.9375rem;
     font-weight: 600;
     color: #00fff8;
@@ -107,7 +108,6 @@ body {
 }
 
 .counter p {
-    padding-left: 8px;
     font-size: 15px;
     font-weight: 400;
     color: #8bacd9;
@@ -118,14 +118,23 @@ body {
     height: 1rem;
 }
 
+button:focus-visible,
+a:focus-visible {
+    outline: solid #fff 3px;
+    outline-offset: 0.25em;
+}
+
 .line {
-    border-top: 1px solid #2f415b;
+    height: 1px;
+    background-color: #2f415b;
+    border: none;
 }
 
 .signature {
     display: flex;
     align-items: center;
     margin-top: 16px;
+    gap: 1rem;
 }
 
 .avatar {
@@ -137,7 +146,6 @@ body {
 }
 
 .created-by {
-    padding-left: 16px;
     color: #8bacd9;
 }
 .created-by p {
@@ -150,41 +158,39 @@ body {
 }
 
 .btn-overlay {
-    background: none;
-}
-
-.nft-picture {
-    border-radius: 22px;
-}
-
-.btn-overlay {
+    display: block;
     position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+.btn-overlay::after,
+.btn-overlay::before {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease-out;
 }
 
 .btn-overlay::after {
-    content: "";
-    position: absolute;
     top: 0;
     left: 0;
-    border-radius: 22px;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
     background-color: rgba(0, 255, 248, 0.5);
+    z-index: 1;
 }
 
 .btn-overlay::before {
-    content: "";
     background-image: url("../images/icon-view.svg");
     background-position: center;
     background-repeat: no-repeat;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    opacity: 0;
+    z-index: 2;
 }
 
 .btn-overlay:hover::after,
@@ -192,9 +198,9 @@ body {
     opacity: 1;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 37.5rem) {
     .wrapper {
-        min-width: 350px;
+        max-width: 21.875rem;
         padding: 24px 24px 32px;
     }
     .nft-name a {

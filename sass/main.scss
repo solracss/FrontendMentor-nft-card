@@ -17,10 +17,6 @@ body {
 	border-radius: 15px;
 }
 
-// .nft-picture {
-// 	border-radius: 8px;
-// }
-
 .nft-name {
 	margin-top: 24px;
 	font-size: rem(22px);
@@ -32,10 +28,6 @@ body {
 		}
 	}
 }
-
-// .overlay {
-// 	display: none;
-// }
 
 .description {
 	margin-top: 12px;
@@ -125,20 +117,6 @@ a:focus-visible {
 		cursor: text;
 	}
 }
-.btn-overlay {
-	background: none;
-}
-
-.nft-picture {
-	border-radius: 22px;
-}
-// .img-container {
-// 	// width: 302px;
-// 	// height: 302px;
-// 	width: 100%;
-// 	border-radius: 22px;
-// 	overflow: hidden;
-// }
 
 .btn-overlay {
 	display: block;
@@ -231,40 +209,4 @@ button {
 			cursor: pointer;
 		}
 	}
-
-	// .img-container {
-	// 	position: relative;
-	// 	// &:hover .overlay {
-	// 	// 	cursor: pointer;
-	// 	// 	opacity: 1;
-	// 	// }
-	// }
-
-	// .overlay {
-	// 	display: block;
-	// 	position: absolute;
-	// 	top: 0;
-	// 	left: 0;
-	// 	opacity: 0;
-	// 	width: 100%;
-	// 	height: 100%;
-	// 	border-radius: 8px;
-	// 	transition: opacity 0.3s;
-	// }
-
-	// .view-icon {
-	// 	position: absolute;
-	// 	top: 50%;
-	// 	left: 50%;
-	// 	transform: translate(-50%, -50%);
-	// 	opacity: 0;
-	// }
-
-	// .btn-overlay {
-	// 	width: 100%;
-	// 	height: 100%;
-	// 	background-color: red;
-	// 	border-radius: 8px;
-	// 	z-index: 12;
-	// }
 }
