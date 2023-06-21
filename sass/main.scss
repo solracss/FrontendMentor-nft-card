@@ -94,7 +94,9 @@ a:focus-visible {
 }
 
 .line {
-	border-top: 1px solid $very-dark-blue-line;
+	height: 1px;
+	background-color: $very-dark-blue-line;
+	border: none;
 }
 
 .signature {
